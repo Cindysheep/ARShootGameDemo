@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="lava" size="0.100000 0.100000" />
+    <ImageTarget name="water" size="0.100000 0.100000" />
+    <ImageTarget name="rock" size="0.100000 0.100000" />
     <ImageTarget name="drone_scaled" size="1.000000 1.727273" />
     <ImageTarget name="astronaut_scaled" size="1.000000 1.727273" />
     <ImageTarget name="TestImag" size="1.000000 0.934989" />
