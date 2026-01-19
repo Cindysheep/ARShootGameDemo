@@ -21,3 +21,7 @@ UserSettings/
 # 忽略导出的资源和包
 *.apk
 *.unitypackage
+
+# 忽略特定的Vuforia包
+Packages/com.ptc.vuforia.engine-11.4.4.tgz
+Assets/Editor/Migration/com.ptc.vuforia.engine-11.4.4.tgz
