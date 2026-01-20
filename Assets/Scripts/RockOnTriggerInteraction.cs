@@ -15,21 +15,18 @@ public class RockOnTriggerInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger entered by: " + other.gameObject.name);
-        //Disable water and lava
-        Water.SetActive(false);
-        Lava.SetActive(false);
+        if(other.gameObject.CompareTag("waterOccObj"))
+        {
+            
+            Debug.Log("Trigger entered by: " + other.gameObject.name);
+            //Disable water and lava
+            Water.SetActive(false);
+            Lava.SetActive(false);
 
-        //Enable and play effect
-        FusionEffect.gameObject.SetActive(true);
-        FusionEffect.Play();
-
-        // if (FusionEffect.isStopped)
-        // {
-        //     RockUI.enabled = true;
-        //     Rock.SetActive(true);
-        // }
-        // WaterAnimator.SetBool("IsInteracting", true);
+            //Enable and play effect
+            FusionEffect.gameObject.SetActive(true);
+            FusionEffect.Play();
+        }
 
     }
 

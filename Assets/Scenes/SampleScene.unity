@@ -1220,7 +1220,7 @@ GameObject:
   - component: {fileID: 457218195}
   m_Layer: 0
   m_Name: Drone Occlusion Object
-  m_TagString: Untagged
+  m_TagString: DroneOccObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1827,7 +1827,7 @@ GameObject:
   - component: {fileID: 845952672}
   m_Layer: 0
   m_Name: lava Occlusion Object
-  m_TagString: Untagged
+  m_TagString: lavaOccObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2237,7 +2237,7 @@ GameObject:
   - component: {fileID: 1162651877}
   m_Layer: 0
   m_Name: water Occlusion Object
-  m_TagString: Untagged
+  m_TagString: waterOccObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2971,7 +2971,7 @@ GameObject:
   - component: {fileID: 1708044455}
   m_Layer: 0
   m_Name: Astronaut Occlusion Object
-  m_TagString: Untagged
+  m_TagString: AstronautOccObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3869,9 +3869,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 493648304}
-        m_TargetAssemblyTypeName: ARButtonController, Assembly-CSharp
-        m_MethodName: OnARButtonClicked
+      - m_Target: {fileID: 711997053}
+        m_TargetAssemblyTypeName: Shoot, Assembly-CSharp
+        m_MethodName: FireProjectile
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3883,7 +3883,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 711997053}
         m_TargetAssemblyTypeName: Shoot, Assembly-CSharp
-        m_MethodName: FireProjectile
+        m_MethodName: OnARButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

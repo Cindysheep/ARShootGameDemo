@@ -22,7 +22,7 @@ public class Shoot : MonoBehaviour
         // projectileSpawnTransform = GameObject.Find("Prefabs/Projectile Spawn Point").transform;
         projectileSpawnTransform = projectileSpawnPoint.transform;
 
-        anim = GetComponent<Animator>();
+        // anim = GetComponent<Animator>();
     }
 
     public void FireProjectile()
@@ -45,5 +45,10 @@ public class Shoot : MonoBehaviour
     private void CoolDown()
     {
         canShoot = true;
+    }
+
+    public void OnARButtonClicked()
+    {
+        Debug.Log("AR Button Clicked!");
     }
 }

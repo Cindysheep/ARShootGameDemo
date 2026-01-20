@@ -6,21 +6,29 @@ public class AnimTrigger : MonoBehaviour
 {
     [SerializeField] private Animator AstronautAnimator;
 
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Astronaut") == false)
+        if(AstronautAnimator == null)
+        {
+            Debug.LogWarning("AstronautAnimator is not missing.");
             return;
-        Debug.Log("Trigger entered by: " + other.gameObject.name);
-        AstronautAnimator.SetBool("IsDrilling", true);
-
+        }
+        if(other.gameObject.CompareTag("DroneOccObj"))
+        {
+            Debug.Log("Trigger entered by: " + other.gameObject.name);
+            AstronautAnimator.SetBool("IsDrilling", true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Astronaut") == false)
+        if(AstronautAnimator == null)
+        {
+            Debug.LogWarning("AstronautAnimator is not missing.");
             return;
+        }
         AstronautAnimator.SetBool("IsDrilling", false);
+
     }
 
 }
